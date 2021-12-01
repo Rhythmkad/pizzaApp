@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="@dimen/_58sdp"
+        android:layout_height="@dimen/_58sdp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginEnd="@dimen/_9sdp"
+        android:src="@drawable/pizza_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/logo_name"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/chef_iv"
+        android:layout_width="@dimen/_86sdp"
+        android:layout_height="@dimen/_86sdp"
+        android:src="@drawable/female_chef"
+        app:layout_constraintBottom_toTopOf="@+id/logo_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.841"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_23sdp"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:fontFamily="@font/rounded_elegance"
+        android:text="@string/my_pizza_app"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_36"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/logo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_29sdp"
+        android:fontFamily="@font/rounded_elegance"
+        android:text="@string/pizza_app_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/logo_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
