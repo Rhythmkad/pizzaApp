@@ -90,7 +90,7 @@ public class CommonActivity extends AppCompatActivity implements View.OnClickLis
             }
         }
     }
-
+//
     // calling fragments
     public void callFragments(String fragTag, String fragName, int removeFragCount, boolean removeFragCheck) {
 
